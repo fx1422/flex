@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            margin: 20px auto;
+            display: flex; /*弹性模型*/
+            border: 1px solid red;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+
+        .son {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100px;
+            width:200px;
+            justify-content: flex-start;
+            font-size: 14px;
+            align-items: center;
+        }
+        .son img{
+            height: 100px;
+            width:100px;
+            display: flex;
+        }
+        .son{
+            order:3;
+        }
+        .son:nth-child(2){
+            order: 1;
+            color: red;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="son">
+        <div>
+            <img src="instro_se.png" alt="">
+        </div>
+        <div class="pDiv">
+            <p>这是一个name</p>
+            <p>这是一个MSG</p>
+        </div>
+    </div>
+    <div class="son">
+        <div>
+            <img src="instro_se.png" alt="">
+        </div>
+        <div class="pDiv">
+            <p>sssss</p>
+            <p>ssssss</p>
+        </div>
+    </div>
+    <div class="son">
+        <div>
+            <img src="instro_se.png" alt="">
+        </div>
+        <div class="pDiv">
+            <p>这是一个name</p>
+            <p>这是一个MSG</p>
+        </div>
+    </div>
+    <div class="son">
+        <div>
+            <img src="instro_se.png" alt="">
+        </div>
+        <div class="pDiv">
+            <p>这是一个name</p>
+            <p>这是一个MSG</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
